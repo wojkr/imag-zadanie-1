@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="text-start">
+    
+        <h3>Uzyteczne linki do nawigacji</h3>
+    
+        <li>
+            <a asp-controller="Customers" asp-action="Index">Lista wszystkich kontrahentow</a>
+        </li>
+        <li> 
+            <a asp-controller="Customers" asp-action="Create">Dodawanie nowych kontrahentów,</a>
+        </li>
+        <li> Aktualizację danych istniejących kontrahentów,</li>
+        <li> Usuwanie kontrahentów,</li>
+        <li>
+            Dodatkowo, lista aktualnych kontrahentow do pobrania w <b>pliku txt: </b>
+            <a asp-controller="Customers" asp-action="DownloadAllCustomersData">Pobierz liste tutaj:</a>
+        </li>
+    </div>
+</div>
+<h3 class="mt-4">Kontakt:</h3>
+<li>
+    <a href="mailto:wojciech.w.krupa@gmail.com">Wyslij maila - Przekierowanie na wasza poczte</a>
+</li>
+<li>
+    <a href="https://wojkr.github.io/portfolio/#contact" target="_blank">Wyslij maila przez formularz na mojeje stronie portfolio</a>
+</li>
